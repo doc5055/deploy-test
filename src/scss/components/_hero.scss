@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+  height: 872px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+    height: 100%;
+
+    img {
+      margin-top: 197px;
+      width: 100%;
+      height: 100%;
+
+      @include xs {
+        margin-top: 246px;
+      }
+    }
+  }
+
+  @include xl-max {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include min-xs {
+    height: 445px;
+  }
+}
